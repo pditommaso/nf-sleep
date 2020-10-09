@@ -2,5 +2,8 @@
 params.timeout = 60 
 
 process foo {
-  /sleep ${params.timeout}/
+  /
+  echo "Hello (timeout $params.timeout)"
+  sleep $params.timeout
+  /
 }
