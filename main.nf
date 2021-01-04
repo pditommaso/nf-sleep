@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow 
-params.timeout = 60 
+params.timeout = 10 
 params.exit = 0 
 
 process foo {
