@@ -4,6 +4,7 @@ params.exit = 0
 params.cmd = "echo 'Hello (timeout $params.timeout)'"
 
 process foo {
+  machineType 'bar'
   /
   bash -c "$params.cmd"
   sleep $params.timeout
