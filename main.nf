@@ -11,3 +11,7 @@ process foo {
   exit $params.exit
   /
 }
+
+workflow {
+  foo()
+}
