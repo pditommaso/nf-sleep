@@ -2,11 +2,12 @@
 params.timeout = 10 
 params.exit = 0
 params.cmd = "echo 'Hello (timeout $params.timeout)'"
-params.times = 1 
+params.times = 1
+params.forks = 1
 
 process foo {
   machineType 'bar'
-  maxForks 1 
+  maxForks params.forks
   input: val(x)
   /
   bash -c "$params.cmd"
