@@ -1,4 +1,6 @@
 #!/usr/bin/env nextflow 
+nextflow.enable.dsl=2
+
 params.timeout = 10 
 params.exit = 0
 params.cmd = "echo 'Hello (timeout $params.timeout)'"
