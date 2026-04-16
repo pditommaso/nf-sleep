@@ -9,11 +9,12 @@ process foo {
   machineType 'bar'
   maxForks params.forks
   input: val(x)
-  /
+  script:
+  """
   bash -c "$params.cmd"
   sleep $params.timeout
   exit $params.exit
-  /
+  """
 }
 
 workflow {
